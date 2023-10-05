@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&family=Open+Sans:wght@500&family=Unbounded:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* Now 1 rem = 10px */
+}
+
+body{
+  background-color: #000000;
+  color: var(--white);
+  font-family: var(--heading2);
+  background-image: url('/public/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+:root{
+  /* colors */
+  --primary:#FFC819;
+  --secondary:#DF1514;
+  --light-grey:#a2a2a2;
+  --dark-grey:#363636;
+  --white:#ffffff;
+  --black:#000000;
+
+  /* fonts  */
+  --heading1:"unbounded";
+  --heading2:"Onest";
+  --heading3:"Open Sans";
+}
+/* styling the navbar */
+
+  #logo{
+    width: 15rem;
+  }
+
+  .navbar{
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navlinks ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+  }
+
+  .navlinks ul li a{
+    font-size: 2.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--heading1);
+    color: var(--light-grey);
+    opacity: 0.2;
+  }
+  
+  .navlinks ul li a:hover{
+    cursor:pointer;
+  }
+  
+  .active{
+    font-weight: bold;
+    color: var(--white);
+    opacity: 1;
+  }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+  .icons img{
+    width: 4rem;
+    padding: 0.8rem;
+  }
+  .icons img:hover{
+    cursor: pointer;
+  }
+
+  /* styling the container  */
+
+  .hero{
+    min-height: 90vh ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1rem;
+  }
+  
+  .hero-headings{
+    padding: 2rem;
+    font-size: 2.3rem;
+  }
+  
+  .main-head{
+    font-family: var(--heading1);
+  }
+  
+  .small-paras{
+    font-family: var(--heading2);
+    color: var(--light-grey);
+    text-align: left;
+    font-size: 1.5rem;
+    width: 65rem;
+  }
+
+  .hero-img img{
+    width: 60rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
+  }
+
+  /* styling the container */
+
+  .path{
+    min-height: 90vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .path h1{
+    font-family: var(--heading1);
+    margin-bottom: 2rem;
+  }
+
+  .path-headings{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    width: 80%;
+  }
+  
+  .path-container{
+    padding: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.3rem solid var(--primary);
+    border-radius: 10rem;
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .sub-headings{
+    text-align: center;
+    padding: 0.4rem 1rem;
+    color: #000000;
+    margin: 3rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: var(--primary);
+  }
+
+  .items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+  }
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    height: 10rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+    background-color: var(--primary);
+  }
+
+  .item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .item img{
+    border-radius: 0.5rem;
+    width: 7rem;
+  }
+  
+  .item p{
+    font-family: var(--heading1);
+    color: var(--dark-grey);
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .create-own-roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    color: #000000;
+    padding: 5rem;
+    width: 83%;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+    background-image: url('/public/images/doodle.jpg');
+  }
+
+  .mid-heading{
+    font-size: 3.5rem;
+  }
+
+  .ideal-btn{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    box-shadow: #000000 4px 4px 0 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    touch-action: manipulation;
+    transition: 0.5s;
+  }
+
+
+  .ideal-btn:hover {
+    background-color: var(--primary);
+  }
+
+  .ideal-btn:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(5px, 5px);
+  }
